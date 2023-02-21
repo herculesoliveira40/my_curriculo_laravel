@@ -10,10 +10,19 @@ use Barryvdh\DomPDF\Facade\Pdf;
 class CurriculoController extends Controller
 {
 
+    protected $curriculo;
 
-    public function index()
+    public function __construct(Curriculo $curriculo)
     {
-        $curriculos = Curriculo::All();
+        $this->curriculo = $curriculo; 
+    }
+
+
+    public function index(Request $request)
+    {
+        $search = $request->search;
+        $curriculos = $this->curriculo
+            ->getCurriculos(search: $request->search ?? '');
         
       //   return response()->json([ "curriculos" => $curriculos ], 200);
 
@@ -63,7 +72,6 @@ class CurriculoController extends Controller
         $curriculo = Curriculo::findOrFail($id);
 
         $pdf = PDF::loadView('curriculos.show_print', compact('curriculo'));
-
 
         return $pdf->setPaper('a4')->stream('Curriculo_'.$curriculo->nome);
     }
