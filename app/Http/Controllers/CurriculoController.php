@@ -77,4 +77,22 @@ class CurriculoController extends Controller
     }
 
 
+    public function createWithoutRegistration()
+    {
+
+        return View('curriculos.create_wr');
+    }
+
+
+    public function cwrPrint(Request $request)
+    {
+        $curriculo = $request->all(); 
+
+     //   dd($curriculo);
+        $pdf = PDF::loadView('curriculos.show_print', compact('curriculo'));
+
+        return $pdf->setPaper('a4')->stream('Curriculo_'.$curriculo['nome']);
+    }
+
+
 }

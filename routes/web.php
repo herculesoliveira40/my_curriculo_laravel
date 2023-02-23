@@ -34,6 +34,8 @@ Route::middleware(['auth'])->group(function () {
 Route::controller(CurriculoController::class)->group(function () {
     Route::get('/curriculo/{id}', 'showPrint')->name('curriculos.show_print');
     Route::get('/curriculos','index')->name('curriculos.index');
+    Route::get('/curriculos/createwr', 'createWithoutRegistration')->name('curriculos.cwr');
+    Route::post('/curriculo/print', 'cwrPrint')->name('curriculos.cwrprint');
 
 });
 
