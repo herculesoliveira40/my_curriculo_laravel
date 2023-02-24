@@ -40,6 +40,7 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="{{ route('curriculos.create') }}">Cadastrar</a></li>
+              <li><a class="dropdown-item" href="{{ route('curriculos.cwr') }}">Criar Curriculo sem Cadastrar</a></li>
               <li><a class="dropdown-item" href="{{ route('curriculos.index') }}">Todos os curriculos</a></li>
             </ul>
           </li>
