@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Site criação e banco de curriculos">
+  <meta name="author" content="Hercules Oliveira">
 
   <link rel="icon" href="/img/logo2.png" sizes="32x32" type="image/png">
   <title>@yield('title')</title>
