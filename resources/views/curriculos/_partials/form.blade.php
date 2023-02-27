@@ -38,16 +38,16 @@
 
         
     <label> Sobre: </label> 
-    <textarea type="text" name="sobre" placeholder="SOBRE: " class="wpcf7-form-control wpcf7-textarea form-control pad form-control-lg" required> {{ $curriculo->sobre ?? old('sobre') }} </textarea>     <br>
+    <textarea type="text" name="sobre" placeholder="SOBRE: " class="form-control" required> {{ $curriculo->sobre ?? old('sobre') }} </textarea>     <br>
 
     <label> Formação: </label>
-    <textarea type="text" name="formacao" placeholder="FORMAÇÃO: " class="wpcf7-form-control wpcf7-textarea form-control pad form-control-lg" required> {{ $curriculo->formacao ?? old('formacao') }} </textarea>   <br>
+    <textarea type="text" name="formacao" placeholder="FORMAÇÃO: " class="form-control" required> {{ $curriculo->formacao ?? old('formacao') }} </textarea>   <br>
     
     <label> Conhecimentos Complementares: </label> 
-    <textarea type="text" name="conhecimento_complementar" placeholder="CONHECIMENTOS COMPLEMENTARES: " class="wpcf7-form-control wpcf7-textarea form-control pad form-control-lg" required> {{ $curriculo->conhecimento_complementar ?? old('conhecimento_complementar') }} </textarea>   <br>
+    <textarea type="text" name="conhecimento_complementar" placeholder="CONHECIMENTOS COMPLEMENTARES: " class="form-control" required> {{ $curriculo->conhecimento_complementar ?? old('conhecimento_complementar') }} </textarea>   <br>
     
     <label> Experiências Profissionais: </label> 
-    <textarea type="text" name="experiencia" placeholder="EXPERIÊNCIAS PROFISISONAIS: " class="wpcf7-form-control wpcf7-textarea form-control pad form-control-lg" required> {{ $curriculo->experiencia ?? old('experiencia') }} </textarea>   <br>
+    <textarea type="text" name="experiencia" placeholder="EXPERIÊNCIAS PROFISISONAIS: " class="form-control" required> {{ $curriculo->experiencia ?? old('experiencia') }} </textarea>   <br>
 
 </fieldset>             
 
