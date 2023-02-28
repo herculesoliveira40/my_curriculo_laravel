@@ -68,7 +68,7 @@
 </body>
 <main>
   <div class="container-fluid">
-    <div class="row">
+    <div class="row">  {{-- content --}}
       @if(session('mensagem'))
       <p class="alert alert-success">{{ session('mensagem') }}</p>
 

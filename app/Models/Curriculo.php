@@ -25,7 +25,7 @@ class Curriculo extends Model
             }
         })
             // ->with('user')
-            ->get();
+            ->paginate(10);
 
         return $curriculos;
     }
