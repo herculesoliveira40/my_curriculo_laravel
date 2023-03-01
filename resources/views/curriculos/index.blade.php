@@ -11,6 +11,11 @@
         </form>
     </div>
     @include('curriculos._partials.table')
-
+    
+    <div> 
+        {{ $curriculos->appends([
+            'search' => request()->get('search', '')
+        ])->links('pagination::bootstrap-5') }}   <!-- underfly OR Provider= Paginator::useBootstrapFive(); -->  
+    </div> 
 
 @endsection
