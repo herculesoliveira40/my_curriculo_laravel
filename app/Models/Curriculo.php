@@ -21,7 +21,7 @@ class Curriculo extends Model
             if ($search) 
             {
                 $query->where('nome', 'LIKE', "%{$search}%");
-                    $query->orwhere('id', $search);
+                    $query->orwhere('area', $search);
             }
         })
             // ->with('user')
