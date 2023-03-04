@@ -2,19 +2,19 @@
     <Legend><strong> Dados Pessoais: </strong></Legend> <p> </p>
 
     <label> Nome Completo: </label>                 
-    <input type="text" name="nome" id="nome" placeholder="Informe seu Nome Completo:"  value="{{ $curriculo->nome ?? old('nome') }}" required>   <br>
+    <input type="text" name="nome" id="nome" placeholder="Informe seu Nome Completo:"  value="{{ $curriculo->nome ?? old('nome') }}" class="form-control"required>   <br>
 
     <label> Celular: </label> 
-    <input type="tel" name="telefone" id="telefone" placeholder="Celular:" onkeypress="$(this).mask('(00) 90000-0000')" value="{{ $curriculo->telefone ?? old('telefone') }}" required>   <br>
+    <input type="tel" name="telefone" id="telefone" placeholder="Celular:" onkeypress="$(this).mask('(00) 90000-0000')" value="{{ $curriculo->telefone ?? old('telefone') }}" class="form-control" required>   <br>
     
     <label> email: </label>    
-    <input type="email" name="email" id="email" placeholder="Informe seu Email:" value="{{ $curriculo->email ?? old('email') }}" required>   <br>
+    <input type="email" name="email" id="email" placeholder="Informe seu Email:" value="{{ $curriculo->email ?? old('email') }}" class="form-control" required>   <br>
     
     <label> Idade: </label> 
-    <input type="number" name="idade" id="idade" min="1" max="99" placeholder="Idade:" value="{{ $curriculo->idade ?? old('idade') }}" required>    <br>
+    <input type="number" name="idade" id="idade" min="1" max="99" placeholder="Idade:" value="{{ $curriculo->idade ?? old('idade') }}" class="form-control" required>    <br>
 
     <label> Cidade: </label> 
-    <input type="text" name="cidade" id="cidade" placeholder="Informe sua Cidade:" value="{{ $curriculo->cidade ?? old('cidade') }}" required>  <br>
+    <input type="text" name="cidade" id="cidade" placeholder="Informe sua Cidade:" value="{{ $curriculo->cidade ?? old('cidade') }}" class="form-control" required>  <br>
   
     <label> Area: </label> 
     <select name="area" id="area">

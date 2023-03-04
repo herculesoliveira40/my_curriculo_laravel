@@ -427,7 +427,7 @@
                     
                 </p>
                 <p> Criação de currículo precisando apenas do navegador com internet de forma simples e gratuita,
-                    podendo fazer sem cadastro, ou com cadastro deixando publico com facilidade para a busca, por nome, ou id.
+                    podendo fazer sem cadastro, ou com cadastro deixando publico com facilidade para a busca, por nome, id, ou area.
 
                 </p>
             </div>
